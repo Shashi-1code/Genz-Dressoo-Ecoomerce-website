@@ -21,6 +21,19 @@ const Footer = () => {
             <li>Privacy Policy</li>
         </ul>
       </div>
+      <div>
+        <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
+        <ul className='flex flex-col gap-1 text-gray-600'>
+            <li>+1-222-465-4335</li>
+            <li>contact@genzdrresoo.com</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+        <hr/>
+        <p className='py-5 text-sm text-center '>
+            &copy; 2024 Genzdrresoo.com All rights reserved.
+        </p>
     </div>
     </div>
   )
