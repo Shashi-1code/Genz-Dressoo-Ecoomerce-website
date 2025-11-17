@@ -4,6 +4,7 @@ import 'dotenv/config';
 import connectDB from './config/mongodb.js';
 import connectCloudinary from './config/cloudinary.js';
 import userRouter from './routes/userRoute.js';
+import productRouter from './routes/productRoute.js';
 
 
 // App config
@@ -20,6 +21,7 @@ app.use(cors());
 
 // API Endpoints
 app.use('/api/user', userRouter);
+app.use('/api/product', productRouter);
 
 app.get('/', (req, res) => {
     res.send('API Working');
@@ -29,4 +31,3 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
-
