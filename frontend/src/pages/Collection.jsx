@@ -59,7 +59,7 @@ const sortProducts=()=>{
 }
 useEffect(() => {
   applyFilter();
-}, [category,subCategories,search,showsearch]);
+}, [category,subCategories,search,showsearch,products]);
 
 useEffect(() => {
   sortProducts();
